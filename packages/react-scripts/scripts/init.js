@@ -81,6 +81,13 @@ function tryGitCommit(appPath) {
   }
 }
 
+// tarik-ga-react-scripts start
+function helloLarkinTuckerLLCDirections() {
+  console.log(chalk.yellow('Hello tarik-ga-react-scripts'));
+  console.log('Hello World');
+}
+// tarik-ga-react-scripts end
+
 module.exports = function (
   appPath,
   appName,
@@ -90,7 +97,7 @@ module.exports = function (
 ) {
   const appPackage = require(path.join(appPath, 'package.json'));
   const useYarn = fs.existsSync(path.join(appPath, 'yarn.lock'));
-
+  helloLarkinTuckerLLCDirections();
   if (!templateName) {
     console.log('');
     console.error(

@@ -290,7 +290,9 @@ function verifyTypeScriptSetup() {
   if (!fs.existsSync(paths.appTypeDeclarations)) {
     fs.writeFileSync(
       paths.appTypeDeclarations,
-      `/// <reference types="react-scripts" />${os.EOL}`
+      // tarik-ga-react-scripts start
+      `/// <reference types="tarik-ga-react-scripts" />${os.EOL}`
+      // tarik-ga-react-scripts end
     );
   }
 }
